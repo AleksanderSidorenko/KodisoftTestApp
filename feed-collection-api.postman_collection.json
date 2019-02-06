@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "5f3331c9-ea8f-4e0a-b303-b2181dd4c7c1",
+		"name": "feed-collection-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/api/collections/{collectionId}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI2NmZjNzQ2MS02NzRjLTRiZGUtYmMwMy04MzEwMGNiYWU0MWIiLCJuYmYiOjE1NDk0MDkyNzcsImV4cCI6MTU1MDAxNDA3NywiaWF0IjoxNTQ5NDA5Mjc3fQ.t3HcVmDad_Wa78vwiXC3G-_I0yrvnhUZS-_c5sg2r4U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"summary\": \"Summary\",\n\t\"text\": \"Text\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:5000/api/collections/f6efd5fd-cb71-44c6-b9b2-5ceff75a0982",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"collections",
+						"f6efd5fd-cb71-44c6-b9b2-5ceff75a0982"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/users/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"Username\": \"johndoe\", \n\t \"Password\": \"john\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:5000/api/users/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/collections",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"collection\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:5000/api/collections",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"collections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/collections/f6efd5fd-cb71-44c6-b9b2-5ceff75a0982",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI2NmZjNzQ2MS02NzRjLTRiZGUtYmMwMy04MzEwMGNiYWU0MWIiLCJuYmYiOjE1NDk0MDkyNzcsImV4cCI6MTU1MDAxNDA3NywiaWF0IjoxNTQ5NDA5Mjc3fQ.t3HcVmDad_Wa78vwiXC3G-_I0yrvnhUZS-_c5sg2r4U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"summary\": \"Summary\",\n\t\"text\": \"Text\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:5000/api/collections/f6efd5fd-cb71-44c6-b9b2-5ceff75a0982",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"collections",
+						"f6efd5fd-cb71-44c6-b9b2-5ceff75a0982"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
