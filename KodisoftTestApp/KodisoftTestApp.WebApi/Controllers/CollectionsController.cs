@@ -82,6 +82,7 @@ namespace KodisoftTestApp.WebApi.Controllers
 
             var feed = new FeedDto { Id = Guid.NewGuid(), CollectionId = id, Summary = request.Summary, Text = request.Text };
             _feeds.InsertOne(feed);
+            _cache.Remove(id);
             return Ok(feed);
         }
     }
